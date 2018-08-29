@@ -28,3 +28,20 @@ pip3 install -U gensim
 python3 wiki2txt.py zhwiki-20180820-pages-articles.xml.bz2
 ```
 *请根据下载的文件适当更改上面的文件名。*
+
+3.使用`jieba`对文分词，并去除停用词
+
+```
+python3 segment.py
+```
+
+4.使用`gensim`的word2vec模型进行训练
+
+```
+python3 train.py
+```
+
+5.测试训练出的模型
+```
+python3 demo.py
+```
