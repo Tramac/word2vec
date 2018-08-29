@@ -32,9 +32,9 @@ python3 wiki2txt.py zhwiki-20180820-pages-articles.xml.bz2
 3.使用 OpenCC 將维基文章统一转换为简体中文
 *由于下载的语料中很多是繁体中文，我们需要统一为简体中文。这里选用的工具为`OpenCC`。
 ```
-opencc -i wiki_texts.txt -o wiki_zh_simple.txt -c t2s.json
+opencc -i wiki_texts.txt -o wiki_zh_simple.txt -c zht2zhs.ini
 ```
-*如果是将简体字转换为繁体字，只要将config参数从t2s.json改为s2tw.json即可。
+*如果是将简体字转换为繁体字，只要将config参数从zht2zhs.ini改为zhs2zht.ini即可。
 
 4.使用`jieba`对文分词，并去除停用词
 
